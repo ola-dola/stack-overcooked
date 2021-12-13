@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Stack Overcooked",
+    "version": "1.0.0",
+    "default_locale": "en",
+    "author": "Ola Oredola",
+    "description": "Hide the cookie dialog on stackoverflow.com and related websites in the StackExchange family",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://stackoverflow.com/*",
+                "https://serverfault.com/*",
+                "https://askubuntu.com/*",
+                "https://superuser.com/*",
+                "https://*.stackexchange.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
